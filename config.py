@@ -15,8 +15,8 @@ API_HASH = getenv("a0936ddf210a7e091e19947c7dc70c91", None)
 BOT_TOKEN = getenv("7438612143:AAGtXqXLcE0ZgikQ9KjE46Fbfuetq7-D4Kk", None)
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("mongodb+srv://Narutoo:hinatahyuga@hater.0luw79s.mongodb.net/"
-MUSIC_BOT_NAME = getenv("MADARA X MUSIC ULTRA"
+MONGO_DB_URI = getenv("mongodb+srv://Narutoo:hinatahyuga@hater.0luw79s.mongodb.net/")
+MUSIC_BOT_NAME = getenv("MADARA X MUSIC ULTRA")
 PRIVATE_BOT_MODE = getenv("PRIVATE_BOT_MODE", None)
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 900))
@@ -25,7 +25,7 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 900))
 LOGGER_ID = -1002510711682
 
 # Get this value from @BRANDRD_ROBOT on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", "8156600797"))
+OWNER_ID = getenv("OWNER_ID", "8156600797")
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -40,24 +40,23 @@ UPSTREAM_REPO = getenv(
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
-)  # Fill this variable if your upstream repository is private
+)
 
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/+DrB-kDhV_1phZmQ1")
 SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/Official_Animes_Post")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
-AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", True))
+AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "True").lower() in ["true", "1", "t"]
 
-# Auto Gcast/Broadcast Handler (True = broadcast on , False = broadcast off During Hosting, Dont Do anything here.)
+# Auto Gcast/Broadcast Handler
 AUTO_GCAST = os.getenv("AUTO_GCAST")
 
-# Auto Broadcast Message That You Want Use In Auto Broadcast In All Groups.
+# Auto Broadcast Message
 AUTO_GCAST_MSG = getenv("AUTO_GCAST_MSG", "")
 
 # Get this credentials from https://developer.spotify.com/dashboard
 SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", "bcfe26b0ebc3428882a0b5fb3e872473")
 SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "907c6a054c214005aeae1fd752273cc4")
-
 
 # Maximum limit for fetching playlist's track from youtube, spotify, apple links.
 SERVER_PLAYLIST_LIMIT = int(getenv("SERVER_PLAYLIST_LIMIT", "50"))
@@ -69,16 +68,13 @@ SONG_DOWNLOAD_DURATION_LIMIT = int(getenv("SONG_DOWNLOAD_DURATION_LIMIT", "2000"
 # Telegram audio and video file size limit (in bytes)
 TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", 104857600))
 TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
-# Checkout https://www.gbmb.org/mb-to-bytes for converting mb to bytes
-
 
 # Get your pyrogram v2 session from @BRANDEDSTRINGSESSION_BOT on Telegram
-STRING1 = getenv("BQG_cUgApR1TaSIzankwg4KE-ki4xvfxI_0zgggqNmKYaNQTPzwQ_IZkCj6v-4saS5sVSuuRO3SdQ8NAr0cj1IIMw-1V0JpyLDfpGoxoUiGdSTgURwbdYsEBhvojUG6CXz3t2a9n3GcBLNMsH_DVefgjh5Gjb5qbtj6sJQiCdheo_KmaoRWb-oYWjqGm9Fd-XbDRIG6jsQ5qKDicQz8msXVh5VSo-8NhY8ErsVrFqzGbcoen-9xRkY_cznyZkgpuC9QoR7fDQ3aEwZZ_VLdyp4J4cjxF9PdVPIuaM6lKZozx6BJXFVyCcjBoQ6qyjIPEsOIWQqXbJxH5xupakoMyKb0279QeOAAAAAG-JZiVAA"
+STRING1 = getenv("BQG_cUgApR1TaSIzankwg4KE-ki4xvfxI_0zgggqNmKYaNQTPzwQ_IZkCj6v-4saS5sVSuuRO3SdQ8NAr0cj1IIMw-1V0JpyLDfpGoxoUiGdSTgURwbdYsEBhvojUG6CXz3t2a9n3GcBLNMsH_DVefgjh5Gjb5qbtj6sJQiCdheo_KmaoRWb-oYWjqGm9Fd-XbDRIG6jsQ5qKDicQz8msXVh5VSo-8NhY8ErsVrFqzGbcoen-9xRkY_cznyZkgpuC9QoR7fDQ3aEwZZ_VLdyp4J4cjxF9PdVPIuaM6lKZozx6BJXFVyCcjBoQ6qyjIPEsOIWQqXbJxH5xupakoMyKb0279QeOAAAAAG-JZiVAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
 STRING5 = getenv("STRING_SESSION5", None)
-
 
 BANNED_USERS = filters.user()
 adminlist = {}
@@ -86,7 +82,6 @@ lyrical = {}
 votemode = {}
 autoclean = []
 confirmer = {}
-
 
 START_IMG_URL = getenv(
     "START_IMG_URL", "https://te.legra.ph/file/62c76ac2095332a0ede75.jpg"
@@ -105,14 +100,11 @@ SPOTIFY_ARTIST_IMG_URL = "https://te.legra.ph/file/5f9fb5bba66021c782d96.jpg"
 SPOTIFY_ALBUM_IMG_URL = "https://te.legra.ph/file/affe0afec5c7ad63676a4.jpg"
 SPOTIFY_PLAYLIST_IMG_URL = "https://te.legra.ph/file/3c446e8dee78ed0ca62ff.jpg"
 
-
 def time_to_seconds(time):
     stringt = str(time)
     return sum(int(x) * 60**i for i, x in enumerate(reversed(stringt.split(":"))))
 
-
 DURATION_LIMIT = int(time_to_seconds(f"{DURATION_LIMIT_MIN}:00"))
-
 
 if SUPPORT_CHANNEL:
     if not re.match("(?:http|https)://", SUPPORT_CHANNEL):
