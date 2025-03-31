@@ -15,17 +15,17 @@ API_HASH = getenv("a0936ddf210a7e091e19947c7dc70c91", None)
 BOT_TOKEN = getenv("7438612143:AAGtXqXLcE0ZgikQ9KjE46Fbfuetq7-D4Kk", None)
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", None)
+MONGO_DB_URI = getenv("mongodb+srv://Narutoo:hinatahyuga@hater.0luw79s.mongodb.net/"
+MUSIC_BOT_NAME = getenv("MADARA X MUSIC ULTRA"
 PRIVATE_BOT_MODE = getenv("PRIVATE_BOT_MODE", None)
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 900))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID", None))
+LOGGER_ID = -1002510711682
 
 # Get this value from @BRANDRD_ROBOT on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", "7250012103"))
+OWNER_ID = int(getenv("OWNER_ID", "8156600797"))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -42,11 +42,11 @@ GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/BRANDRD_BOT")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/BRANDED_WORLD")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/+DrB-kDhV_1phZmQ1")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/Official_Animes_Post")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
-AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
+AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", True))
 
 # Auto Gcast/Broadcast Handler (True = broadcast on , False = broadcast off During Hosting, Dont Do anything here.)
 AUTO_GCAST = os.getenv("AUTO_GCAST")
